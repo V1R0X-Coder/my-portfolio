@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fff8ef"><meta name="description" content="Luma Events — discover live music, creative workshops and experiences.">
+<title>Luma Events — Find Your Next Moment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="luma-events.css"><script src="luma-events.js" defer></script>
+</head>
+<body>
+<div class="demo-ribbon">NIYA GIGS PROJECT DEMO · SAMPLE EVENTS</div>
+<header class="header"><a class="logo" href="#top"><span class="logo-icon">L</span><span>LUMA<small>FIND YOUR NEXT MOMENT</small></span></a><nav><a href="#discover">Discover</a><a href="#about">Our vibe</a><a href="#saved">Saved <b id="saved-count">0</b></a></nav><a class="host-link" href="mailto:ericushie3@gmail.com?subject=Luma%20Events%20demo">CONTACT THE BUILDER ↗</a><button class="mobile-menu" id="mobile-menu" aria-label="Toggle navigation">☰</button></header>
+<main id="top">
+<section class="hero">
+<div class="hero-copy"><p class="eyebrow"><span></span> YOUR CITY IS FULL OF STORIES</p><h1>Make room<br>for <em>moments.</em></h1><p>Find the live music, creative workshops and little adventures that turn an ordinary day into a story worth telling.</p><div class="hero-actions"><a class="primary" href="#discover">FIND YOUR NEXT EVENT <b>↘</b></a><span class="hero-note">GOOD PLANS START HERE.</span></div><div class="hero-foot"><span>CURATED FOR THE CURIOUS</span><span>01 — 04 / DEMO</span></div></div>
+<div class="hero-art"><div class="sun"></div><div class="hero-poster"><small>THE CITY IS YOURS</small><strong>GO<br>OUT.<br><i>FEEL</i><br>MORE.</strong><span>ART · MUSIC · PEOPLE · CULTURE</span></div><div class="floating-note note-one">✳ MAKE IT COUNT</div><div class="floating-note note-two">YOUR NEXT<br>FAVOURITE MEMORY ↗</div><div class="scribble">✳</div></div>
+</section>
+<section class="ticker"><div>FIND YOUR PEOPLE <b>✳</b> FOLLOW YOUR CURIOSITY <b>✳</b> MAKE A NIGHT OF IT <b>✳</b> FIND YOUR PEOPLE <b>✳</b></div></section>
+<section class="discover section-wrap" id="discover">
+<div class="section-head"><div><p class="eyebrow">01 / THE GOOD STUFF</p><h2>What's happening<span>?</span></h2></div><p>Little discoveries. Big energy.<br>Pick a mood and see where it takes you.</p></div>
+<div class="controls"><div class="filters" role="group" aria-label="Filter events"><button class="active" data-filter="all" aria-pressed="true">ALL EVENTS</button><button data-filter="music" aria-pressed="false">MUSIC</button><button data-filter="art" aria-pressed="false">ART & CULTURE</button><button data-filter="learning" aria-pressed="false">LEARNING</button><button data-filter="community" aria-pressed="false">COMMUNITY</button></div><label class="search"><span>⌕</span><input id="event-search" type="search" placeholder="Search an event or city..." aria-label="Search events"></label></div>
+<div class="event-grid" id="event-grid">
+<article class="event-card" data-category="music" data-search="sunset sessions live music rooftop kano lagos">
+<div class="event-art sunset"><span class="event-label">LIVE MUSIC</span><span class="art-date">FRI<br><b>28</b><br>NOV</span><div class="sunset-disc"></div><strong>SUNSET<br><i>SESSIONS</i></strong><small>GOOD SOUND. GOLDEN HOUR.</small></div>
+<div class="event-info"><div class="event-meta"><span>28 NOV · 5:30 PM</span><span>KANO</span></div><h3>Sunset Sessions</h3><p>An easy evening of live sets, good company and golden-hour energy.</p><div class="event-bottom"><span>FROM ₦5,000 <small>DEMO PRICE</small></span><button class="event-open" data-event="sunset">VIEW EVENT ↗</button></div></div></article>
+<article class="event-card" data-category="art" data-search="makers market design art crafts creative lagos">
+<div class="event-art makers"><span class="event-label">ART & CULTURE</span><span class="art-date">SAT<br><b>29</b><br>NOV</span><div class="maker-shape shape-one"></div><div class="maker-shape shape-two"></div><strong>MAKERS<br><i>MARKET</i></strong><small>MEET THE HANDS BEHIND THE WORK.</small></div>
+<div class="event-info"><div class="event-meta"><span>29 NOV · 11:00 AM</span><span>LAGOS</span></div><h3>The Makers Market</h3><p>A playful pop-up celebrating independent makers, design and handmade finds.</p><div class="event-bottom"><span>FREE ENTRY <small>DEMO LISTING</small></span><button class="event-open" data-event="makers">VIEW EVENT ↗</button></div></div></article>
+<article class="event-card" data-category="learning" data-search="build your first website coding workshop technology online">
+<div class="event-art code"><span class="event-label">WORKSHOP</span><span class="art-date">SUN<br><b>30</b><br>NOV</span><div class="code-window"><span>01 / HTML</span><b>&lt;/&gt;</b><small>IDEA → WEBSITE</small></div><strong>BUILD<br><i>SOMETHING.</i></strong><small>START WITH ONE LINE OF CODE.</small></div>
+<div class="event-info"><div class="event-meta"><span>30 NOV · 2:00 PM</span><span>ONLINE</span></div><h3>Build Your First Website</h3><p>A beginner-friendly creative coding session focused on making your first web page.</p><div class="event-bottom"><span>FREE <small>DEMO LISTING</small></span><button class="event-open" data-event="coding">VIEW EVENT ↗</button></div></div></article>
+<article class="event-card" data-category="community" data-search="community clean up green day volunteering environment">
+<div class="event-art green"><span class="event-label">COMMUNITY</span><span class="art-date">SUN<br><b>07</b><br>DEC</span><div class="green-sun"></div><strong>GREEN<br><i>TOGETHER.</i></strong><small>SMALL ACTION. SHARED IMPACT.</small></div>
+<div class="event-info"><div class="event-meta"><span>07 DEC · 9:00 AM</span><span>KANO</span></div><h3>Green Together Day</h3><p>Meet neighbours, care for shared spaces and make a positive local impact.</p><div class="event-bottom"><span>FREE <small>DEMO LISTING</small></span><button class="event-open" data-event="green">VIEW EVENT ↗</button></div></div></article>
+</div><p class="empty-state" id="empty-state" hidden>No events found. Try another search or category.</p>
+</section>
+<section class="about-band" id="about"><div class="section-wrap about-inner"><div><p class="eyebrow">02 / THE LUMA FEELING</p><h2>Less scrolling.<br><em>More living.</em></h2></div><p>Luma is a concept for discovering experiences beyond the usual routine. Browse by interest, save the things that catch your eye and make a plan with your people.</p><a href="#discover">FIND SOMETHING GOOD ↗</a></div></section>
+<section class="saved-section section-wrap" id="saved"><div class="section-head"><div><p class="eyebrow">03 / YOUR SHORTLIST</p><h2>Keep the good ones<span>.</span></h2></div><p>Tap the bookmark on an event to save it on this device.</p></div><div class="saved-list" id="saved-list"><p class="saved-empty">Your saved events will appear here.</p></div></section>
+</main>
+<footer><div class="section-wrap footer-inner"><a class="logo" href="#top"><span class="logo-icon">L</span><span>LUMA<small>FIND YOUR NEXT MOMENT</small></span></a><p>AN ORIGINAL WEBSITE CONCEPT BY NIYA GIGS / ERIC USHIE</p><div class="luma-footer-actions"><a href="mailto:ericushie3@gmail.com">SAY HELLO ↗</a><a href="index.html">← BACK TO NIYA GIGS PORTFOLIO</a></div></div><div class="section-wrap footnote">DEMO PROJECT · SAMPLE EVENTS, DATES AND PRICES ARE NOT REAL BOOKINGS.</div></footer>
+<dialog id="event-dialog"><button class="close-dialog" id="close-dialog" aria-label="Close">×</button><p class="eyebrow" id="dialog-category"></p><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-details" id="dialog-details"></div><div class="dialog-actions"><button class="save-button" id="dialog-save">♡ SAVE EVENT</button><a class="primary" id="event-enquiry" href="mailto:ericushie3@gmail.com">ASK ABOUT THIS DEMO ↗</a></div><small class="demo-warning">This is a portfolio demo. No real tickets are available.</small></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a08">
+  <meta name="description" content="Book a Prime Form personal training consultation.">
+  <title>Book Coaching | Prime Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="prime-form.css">
+  <script src="prime-form.js" defer></script>
+</head>
+<body class="inner-page">
+  <div class="announcement"><span class="pulse-dot"></span> ONE SESSION CAN CHANGE YOUR ROUTINE <a href="prime-form-calculator.html">CHECK YOUR BASELINE <span>↗</span></a></div>
+  <header class="site-header"><a class="brand" href="prime-form.html" aria-label="Prime Form home"><span class="brand-mark">P<span>F</span></span><span class="brand-name">PRIME<span>FORM</span></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="main-nav" aria-label="Main navigation"><a href="prime-form.html">Home</a><a href="prime-form-calculator.html">Fitness calculator</a><a class="active" href="prime-form-booking.html">Coaching</a><a class="nav-cta" href="prime-form-booking.html">LET'S TRAIN <span>↗</span></a></nav></header>
+  <main>
+    <section class="page-hero booking-hero"><div class="page-width page-hero-content"><p class="eyebrow"><span class="eyebrow-line"></span> TAKE THE FIRST STEP</p><h1>LET'S MAKE<br><span>IT HAPPEN.</span></h1><p>Tell us what you're looking for. We'll take it from there — one conversation, one plan, one session at a time.</p><div class="breadcrumb"><a href="prime-form.html">HOME</a><span>/</span><span>BOOK COACHING</span></div></div></section>
+    <section class="booking-layout page-width section-pad">
+      <aside class="booking-aside"><div class="section-kicker">01 / START HERE</div><h2>YOUR NEXT<br><span>CHAPTER.</span></h2><p>Complete the form and continue in WhatsApp with your details ready to send. A real booking is confirmed only after the coaching team replies.</p><div class="contact-detail"><span class="contact-icon">↗</span><div><small>THE PROCESS</small><strong>Simple. Direct. Personal.</strong></div></div><div class="contact-detail"><span class="contact-icon">◎</span><div><small>TRAINING OPTIONS</small><strong>In-person or online</strong></div></div><div class="aside-image"></div><p class="aside-small">GOOD TRAINING STARTS WITH A GOOD CONVERSATION.</p></aside>
+      <div class="booking-card"><div class="booking-card-head"><span>COACHING ENQUIRY</span><span>FORM 01 / 01</span></div><form id="booking-form" novalidate>
+        <div class="booking-fields"><label class="field field-wide">Full name<input type="text" name="fullName" placeholder="Your full name" autocomplete="name" minlength="2" required></label><label class="field">Phone number<input type="tel" name="phone" placeholder="+234 800 000 0000" autocomplete="tel" required></label><label class="field">Email address<input type="email" name="email" placeholder="you@example.com" autocomplete="email" required></label><label class="field">Preferred date<input type="date" name="date" required></label><label class="field">Preferred time<select name="time" required><option value="">Choose a time</option><option>Early morning (6am–9am)</option><option>Morning (9am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–8pm)</option></select></label><label class="field field-wide">Training type<select name="trainingType" required><option value="">Select your preferred format</option><option>1-on-1 Personal Training</option><option>Group Training</option><option>Online Coaching</option></select></label></div>
+        <label class="consent-check"><input type="checkbox" name="consent" required><span>I agree that my details will be used to respond to this coaching enquiry.</span></label>
+        <div class="form-error" id="booking-error" role="alert" aria-live="polite"></div>
+        <button class="button button-primary submit-booking" type="submit">CONTINUE TO WHATSAPP <span>↗</span></button>
+        <p class="form-footnote">Your WhatsApp app or WhatsApp Web will open with a pre-filled message. Review it and press Send to submit your enquiry.</p>
+      </form></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="page-width footer-main"><a class="brand" href="prime-form.html"><span class="brand-mark">P<span>F</span></span><span class="brand-name">PRIME<span>FORM</span></span></a><p>TRAIN WITH INTENT.<br>LIVE WITH ENERGY.</p><div class="footer-links"><a href="prime-form.html">HOME</a><a href="prime-form-calculator.html">CALCULATOR</a><a href="prime-form-booking.html">BOOKING</a><a href="index.html">← NIYA GIGS PORTFOLIO</a></div></div><div class="page-width footer-bottom"><span>© <span id="year"></span> PRIME FORM TRAINING</span><span>BUILT FOR THE LONG GAME.</span></div></footer><button class="back-top" aria-label="Back to top">↑</button>
+</body>
+</html>

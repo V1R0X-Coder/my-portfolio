@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080a08">
+  <meta name="description" content="Explore an adult energy expenditure estimate with the Prime Form fitness calculator.">
+  <title>Fitness Calculator | Prime Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="prime-form.css">
+  <script src="prime-form.js" defer></script>
+</head>
+<body class="inner-page">
+  <div class="announcement"><span class="pulse-dot"></span> KNOW YOUR BASELINE. TRAIN WITH PURPOSE. <a href="prime-form-booking.html">BOOK A SESSION <span>↗</span></a></div>
+  <header class="site-header"><a class="brand" href="prime-form.html" aria-label="Prime Form home"><span class="brand-mark">P<span>F</span></span><span class="brand-name">PRIME<span>FORM</span></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button><nav class="main-nav" aria-label="Main navigation"><a href="prime-form.html">Home</a><a class="active" href="prime-form-calculator.html">Fitness calculator</a><a href="prime-form-booking.html">Coaching</a><a class="nav-cta" href="prime-form-booking.html">LET'S TRAIN <span>↗</span></a></nav></header>
+  <main>
+    <section class="page-hero calculator-hero"><div class="page-width page-hero-content"><p class="eyebrow"><span class="eyebrow-line"></span> YOUR NUMBERS, WITH CONTEXT</p><h1>KNOW YOUR<br><span>BASELINE.</span></h1><p>Use this educational tool to estimate resting energy needs and daily energy expenditure. Numbers are a starting point — not a verdict.</p><div class="breadcrumb"><a href="prime-form.html">HOME</a><span>/</span><span>FITNESS CALCULATOR</span></div></div></section>
+
+    <section class="calculator-layout page-width section-pad">
+      <div class="calculator-intro"><div class="section-kicker">01 / ENERGY ESTIMATOR</div><h2>BUILD A CLEARER<br><span>PICTURE.</span></h2><p>The Mifflin–St Jeor equation estimates Basal Metabolic Rate (BMR). We then apply an activity factor to estimate Total Daily Energy Expenditure (TDEE).</p><div class="equation-card"><span class="equation-label">THE METHOD</span><strong>BMR → TDEE</strong><p>Resting estimate × activity factor</p></div><div class="safety-note"><span>ⓘ</span><p><strong>For adults 18 and over.</strong> This calculator does not provide calorie targets for anyone under 18. Teen energy needs change with growth and development; speak with a qualified healthcare professional for individual guidance.</p></div></div>
+      <div class="calculator-card">
+        <div class="form-progress"><div class="progress-copy"><span>YOUR PROFILE</span><span id="step-label">STEP 01 / 03</span></div><div class="progress-track"><span id="progress-fill"></span></div></div>
+        <form id="fitness-form" novalidate>
+          <section class="calc-step active" data-step="1"><div class="calc-step-heading"><span>01</span><div><h3>START WITH THE BASICS</h3><p>Enter your profile details.</p></div></div>
+            <div class="field-grid"><label class="field">Age <span class="field-unit">YEARS</span><input type="number" name="age" min="18" max="100" placeholder="e.g. 28" required></label><label class="field">Gender formula<select name="gender" required><option value="">Select</option><option value="male">Male</option><option value="female">Female</option></select></label><label class="field">Height <span class="field-unit">CM</span><input type="number" name="height" min="120" max="230" placeholder="e.g. 175" required></label><label class="field">Weight <span class="field-unit">KG</span><input type="number" name="weight" min="35" max="250" step="0.1" placeholder="e.g. 75" required></label></div>
+            <div class="step-actions"><span class="step-hint">ALL FIELDS REQUIRED</span><button type="button" class="button button-primary next-step">NEXT STEP <span>→</span></button></div>
+          </section>
+          <section class="calc-step" data-step="2"><div class="calc-step-heading"><span>02</span><div><h3>DEFINE YOUR DIRECTION</h3><p>Choose the focus that best describes your current goal.</p></div></div>
+            <div class="choice-list"><label class="choice-card"><input type="radio" name="goal" value="Lose weight" required><span class="choice-mark"></span><span><strong>Lose weight</strong><small>Understand your baseline while prioritising sustainable habits.</small></span><b>↗</b></label><label class="choice-card"><input type="radio" name="goal" value="Build muscle"><span class="choice-mark"></span><span><strong>Build muscle</strong><small>Support strength training, recovery and consistent nutrition.</small></span><b>↗</b></label><label class="choice-card"><input type="radio" name="goal" value="Maintain"><span class="choice-mark"></span><span><strong>Maintain</strong><small>Explore an estimated energy level for your usual routine.</small></span><b>↗</b></label></div>
+            <div class="step-actions"><button type="button" class="button button-ghost prev-step">← BACK</button><button type="button" class="button button-primary next-step">NEXT STEP <span>→</span></button></div>
+          </section>
+          <section class="calc-step" data-step="3"><div class="calc-step-heading"><span>03</span><div><h3>HOW ACTIVE ARE YOU?</h3><p>Choose the option closest to your average week.</p></div></div>
+            <div class="activity-options"><label class="activity-option"><input type="radio" name="activity" value="1.2" required><span><strong>SEDENTARY</strong><small>Mostly sitting; little planned exercise</small></span></label><label class="activity-option"><input type="radio" name="activity" value="1.375"><span><strong>LIGHTLY ACTIVE</strong><small>Light exercise or sport 1–3 days/week</small></span></label><label class="activity-option"><input type="radio" name="activity" value="1.725"><span><strong>VERY ACTIVE</strong><small>Hard training or physical activity most days</small></span></label></div>
+            <div class="step-actions"><button type="button" class="button button-ghost prev-step">← BACK</button><button type="submit" class="button button-primary">CALCULATE <span>↗</span></button></div>
+          </section>
+          <div class="form-error" id="calc-error" role="alert" aria-live="polite"></div>
+        </form>
+        <section class="result-panel" id="calc-result" hidden aria-live="polite"><div class="result-top"><span class="result-tag">YOUR ESTIMATE</span><span class="result-check">✓ CALCULATED</span></div><p class="result-caption">ESTIMATED DAILY ENERGY EXPENDITURE</p><div class="result-number"><strong id="tdee-value">—</strong><span>kcal / day</span></div><div class="result-stats"><div><span>BMR ESTIMATE</span><strong id="bmr-value">—</strong><small>kcal / day at rest</small></div><div><span>ACTIVITY FACTOR</span><strong id="activity-value">—</strong><small id="goal-value">Selected focus</small></div></div><p class="result-disclaimer">This is a mathematical estimate, not a prescribed intake or medical recommendation. Actual needs vary. Avoid using one calculation as a reason to restrict food.</p><div class="result-actions"><a class="button button-primary" href="prime-form-booking.html">BOOK A COACHING SESSION <span>↗</span></a><button type="button" class="reset-calculator">RECALCULATE ↻</button></div></section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="page-width footer-main"><a class="brand" href="prime-form.html"><span class="brand-mark">P<span>F</span></span><span class="brand-name">PRIME<span>FORM</span></span></a><p>TRAIN WITH INTENT.<br>LIVE WITH ENERGY.</p><div class="footer-links"><a href="prime-form.html">HOME</a><a href="prime-form-calculator.html">CALCULATOR</a><a href="prime-form-booking.html">BOOKING</a><a href="index.html">← NIYA GIGS PORTFOLIO</a></div></div><div class="page-width footer-bottom"><span>© <span id="year"></span> PRIME FORM TRAINING</span><span>BUILT FOR THE LONG GAME.</span></div></footer><button class="back-top" aria-label="Back to top">↑</button>
+</body>
+</html>

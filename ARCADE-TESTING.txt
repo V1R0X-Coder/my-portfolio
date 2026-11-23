@@ -1,0 +1,14 @@
+ARCADE RELEASE NOTES
+
+This update replaces the previous Phaser-dependent five-game page with a native Canvas 2D arcade containing seven games. No Phaser CDN or TypeScript build step is required to play.
+
+Checks completed for this delivery:
+- games.js passes Node's JavaScript syntax check.
+- games.html contains the seven game launch cards and references the local games.js file.
+- The previous Phaser script dependency and old five-game names have been removed from the arcade page.
+- The full portfolio archive is checked for ZIP integrity before delivery.
+
+Important scope notes:
+- The games are original playable browser prototypes, not a two-year production game release.
+- Neon Arena's offline bot match works without setup. Its optional Supabase Realtime layer shares player positions only; it is not yet full server-authoritative multiplayer combat or matchmaking.
+- Best scores are stored in browser localStorage, so they are local to that browser/device.
